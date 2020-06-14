@@ -1,0 +1,339 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #22222b;
+  font-size: 16px;
+}
+
+body, html {
+  height: 100vh;
+}
+
+.wrap {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.main {
+  background-image: url(../img/pink-bg.jpg);
+  padding-bottom: 42px;
+  background-image: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 32px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 300;
+  padding: 6px 29px span;
+  padding-font-size: 60px;
+  padding-font-weight: 500;
+  padding-line-height: 24px;
+}
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+.nav__item {
+  margin-left: 23px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.24px;
+}
+.nav__link {
+  color: #22222b;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+.nav__link:hover {
+  border-bottom: 1px solid #22222b;
+}
+
+.btn-scroll {
+  border: none;
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
+}
+
+/*************SECTION 2 ABOUT*********************************/
+.section-about {
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+
+.block-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.block-about-item {
+  flex: 0 0 45%;
+  max-width: 45%;
+  position: relative;
+}
+.block-about-item:first-child {
+  display: flex;
+  justify-content: flex-end;
+}
+.block-about__text {
+  padding-bottom: 51px;
+}
+.block-about__back {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: -108px;
+}
+.block-about__front {
+  width: 344px;
+  height: 447px;
+}
+.block-about__vertical {
+  position: absolute;
+  bottom: 43px;
+  left: 0;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  /* Text style for "Work Place" */
+  letter-spacing: 1.6px;
+}
+.block-about__vertical::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 45px;
+  background-color: #22222b;
+  position: absolute;
+  top: 104px;
+  left: 10px;
+}
+.block-about__title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.block-about__text {
+  color: #7f7f82;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.progress-bar {
+  color: #22222b;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.progress-bar__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.progress-bar__line {
+  width: 100%;
+  height: 2px;
+  background-color: #22222b;
+  position: relative;
+}
+.progress-bar__line::before {
+  content: "";
+  background-image: url(../img/circle.png);
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 11px;
+  position: absolute;
+  left: -1px;
+  top: calc(50% - 5px);
+}
+.progress-bar__line::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  display: block;
+  height: 2px;
+  background-color: #f2f2f2;
+}
+.progress-bar__line-indesign::after {
+  width: 35%;
+}
+.progress-bar__line-xd::after {
+  width: 20%;
+}
+
+/*************SECTION 3 services*********************************/
+.section-services {
+  background-color: #ecdee5;
+}
+.section-services__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.section-services__desc {
+  color: #7f7f82;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 65px;
+}
+
+.block-services {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr 1fr;
+  grid-gap: 43px;
+  padding-bottom: 100px;
+}
+.block-services__item:hover .block-services__link-text {
+  width: inherit;
+  opacity: 1;
+  padding-right: 9px;
+  transition: 0.5s ease-in;
+}
+.block-services__title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.block-services__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #7f7f82;
+  margin-bottom: 30px;
+}
+.block-services__link {
+  text-decoration: none;
+  color: #22222b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+}
+.block-services__link-text {
+  opacity: 0;
+  width: 0;
+}
+.block-services__link-line {
+  display: block;
+  width: 25px;
+  height: 1px;
+  background-color: #22222b;
+}
+.block-services__icon {
+  width: 44px;
+  height: 37px;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}
+.block-services__design {
+  background-image: url(../img/icon-1.svg);
+  background-size: 41px 35px;
+}
+
+/*************SECTION 4 portfolio *********************************/
+.section-portfolio {
+  padding-top: 70px;
+  padding-bottom: 183px;
+}
+
+.block-portfolio {
+  display: grid;
+  grid-template: repeat(7, 82px)/1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+.block-portfolio-01 {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.block-portfolio-02 {
+  grid-column: 2/3;
+  grid-row: 1/5;
+}
+.block-portfolio-03 {
+  grid-row: 1/4;
+  grid-column: 3/4;
+}
+.block-portfolio-04 {
+  grid-row: 4/8;
+  grid-column: 1/2;
+}
+.block-portfolio-05 {
+  grid-row: 5/8;
+  grid-column: 2/3;
+}
+.block-portfolio-06 {
+  grid-row: 4/8;
+  grid-column: 3/4;
+}
+
+/*************SECTION 4 portfolio *********************************/
+.section-banner {
+  background-color: #22222b;
+  padding: 93px 0;
+  padding-top: 30px;
+  color: #ffffff;
+  text-decoration: center;
+  margin-bottom: 100px;
+}
+.section-banner__text {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.section-banner__title {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 37px;
+}
+.section-banner__btn {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 7px;
+  letter-spacing: 0.8px;
+  background-color: #ffffff;
+  padding: 22px 54px;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  max-width: 63px;
+  color: #22222b;
+}
+
+/*# sourceMappingURL=style.css.map */
