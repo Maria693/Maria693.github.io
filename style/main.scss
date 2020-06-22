@@ -192,7 +192,7 @@ body,html{
 .section-about{
     padding-bottom: 200px;
     padding-top: 10px;
-    background-image:url(../img/fon.jpg);
+    background-color:#111111;
     z-index: 1;
     margin-bottom: 5px;
     @media (max-width: 750px) {
@@ -376,6 +376,9 @@ body,html{
         font-family: "Montserrat";
         text-transform: uppercase;
         margin-bottom: 120px;
+        @media (max-width: 375px) {
+            margin-bottom: 70px;
+        }
     }
     &__text{
         line-height: 2;
@@ -510,6 +513,9 @@ body,html{
         @media (max-width: 870px) {
             font-size: 19px;
         }
+        @media (max-width: 375px) {
+            margin-top: 50px;
+        }
     }
     &__desc{
         font-weight: 500;
@@ -519,6 +525,9 @@ body,html{
         margin-bottom: 100px;
         @media (max-width: 700px) {
             font-size: 18px;
+        }
+        @media (max-width: 375px) {
+            margin-bottom: 50px;
         }
     }
 }
@@ -649,7 +658,6 @@ body,html{
 .section-skills{
     padding-bottom: 50px;
 }.block-softSkill{
-    padding-bottom: 50px;
     background-image:url(../img/fon.jpg);
     &__title{
         
@@ -659,7 +667,7 @@ body,html{
     max-width: 100%;
     margin: auto;
     @media (max-width: 830px) {
-        max-width: 73%;
+        max-width: 100%;
          margin-top: 50px;
     }
 }

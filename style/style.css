@@ -218,7 +218,7 @@ body, html {
 .section-about {
   padding-bottom: 200px;
   padding-top: 10px;
-  background-image: url(../img/fon.jpg);
+  background-color: #111111;
   z-index: 1;
   margin-bottom: 5px;
 }
@@ -430,6 +430,11 @@ body, html {
   text-transform: uppercase;
   margin-bottom: 120px;
 }
+@media (max-width: 375px) {
+  .block-about__title {
+    margin-bottom: 70px;
+  }
+}
 .block-about__text {
   line-height: 2;
   color: #6f6f6f;
@@ -561,6 +566,11 @@ body, html {
     font-size: 19px;
   }
 }
+@media (max-width: 375px) {
+  .section-skills__title {
+    margin-top: 50px;
+  }
+}
 .section-skills__desc {
   font-weight: 500;
   line-height: 1.4;
@@ -571,6 +581,11 @@ body, html {
 @media (max-width: 700px) {
   .section-skills__desc {
     font-size: 18px;
+  }
+}
+@media (max-width: 375px) {
+  .section-skills__desc {
+    margin-bottom: 50px;
   }
 }
 
@@ -721,7 +736,6 @@ body, html {
 }
 
 .block-softSkill {
-  padding-bottom: 50px;
   background-image: url(../img/fon.jpg);
 }
 .progress-bar {
@@ -730,7 +744,7 @@ body, html {
 }
 @media (max-width: 830px) {
   .progress-bar {
-    max-width: 73%;
+    max-width: 100%;
     margin-top: 50px;
   }
 }
